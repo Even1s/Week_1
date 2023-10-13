@@ -1,0 +1,142 @@
+.header-1 {
+  background-color: #18154B;
+  height: 46px;
+}
+
+.header-1__container {
+  max-width: 1180px;
+  height: 100%;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-1__contacts {
+  display: flex;
+  justify-content: space-between;
+  width: 340px;
+}
+.header-1__contacts a {
+  color: #F0F5FB;
+  display: flex;
+}
+.header-1__contacts a img {
+  margin-right: 9px;
+}
+.header-1__contacts a h3 {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.header-1__media {
+  display: flex;
+  width: 70px;
+  justify-content: space-between;
+}
+
+.header-2 {
+  background-color: #FFFFFF;
+  height: 70px;
+  box-shadow: 0px 4px 20px 0px rgba(0, 7, 94, 0.1019607843);
+}
+
+.header-2__container {
+  max-width: 1180px;
+  height: 100%;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-2__logo {
+  font-weight: 800;
+  font-size: 20px;
+  background: linear-gradient(73.56deg, #0D748B -10.13%, #1A0B73 75.49%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header-2__menu-1 {
+  display: flex;
+  width: 574px;
+  justify-content: space-between;
+}
+.header-2__menu-1 h3 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #303239;
+}
+.header-2__menu-1 h3:hover {
+  color: rgba(48, 50, 57, 0.6980392157);
+  cursor: pointer;
+}
+
+.header-2__menu-1__catalog h3 {
+  float: left;
+  margin-right: 8px;
+}
+.header-2__menu-1__catalog img {
+  margin-bottom: 2px;
+}
+
+.header-2__menu-2 {
+  display: flex;
+  width: 140px;
+  justify-content: space-between;
+}
+.header-2__menu-2 button {
+  width: 40px;
+  height: 40px;
+  border: 0;
+  border-radius: 50%;
+  background-color: #F0F5FB;
+  position: relative;
+}
+.header-2__menu-2 button img {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+.header-2__menu-2 button h4 {
+  position: absolute;
+  font-size: 10px;
+  font-weight: 500;
+  background: #18154B;
+  color: #FFFFFF;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  padding-top: 2px;
+  top: -6px;
+  right: -7px;
+  z-index: 1;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito Sans", sans-serif;
+  text-decoration: none;
+}
+
+.main__container {
+  max-width: 1180px;
+}
+
+main {
+  min-height: 100vh;
+  background: #F0F5FB;
+}
+
+.button-gradient {
+  background: linear-gradient(73.56deg, #0D748B -10.13%, #1A0B73 75.49%);
+  width: 160px;
+  height: 40px;
+  border-radius: 50px;
+  border: 0;
+  color: #FFFFFF;
+}/*# sourceMappingURL=index.css.map */

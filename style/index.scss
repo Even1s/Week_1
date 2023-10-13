@@ -1,0 +1,24 @@
+@import "./blocks/header";
+@import "./blocks/footer";
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    text-decoration: none;
+}
+.main__container {
+    max-width: 1180px;
+}
+main {
+    min-height: 100vh;
+    background:#F0F5FB;
+}
+.button-gradient {
+    background: linear-gradient(73.56deg, #0D748B -10.13%, #1A0B73 75.49%);
+    width: 160px;
+    height: 40px;
+    border-radius: 50px;
+    border: 0;
+    color: #FFFFFF;
+}
