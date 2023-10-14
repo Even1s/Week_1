@@ -1,3 +1,4 @@
+@import "./blocks/elements";
 @import "./blocks/header";
 @import "./blocks/footer";
 * {
@@ -14,11 +15,6 @@ main {
     min-height: 100vh;
     background:#F0F5FB;
 }
-.button-gradient {
-    background: linear-gradient(73.56deg, #0D748B -10.13%, #1A0B73 75.49%);
-    width: 160px;
-    height: 40px;
-    border-radius: 50px;
-    border: 0;
-    color: #FFFFFF;
+.lock {
+    overflow-y: hidden;
 }
