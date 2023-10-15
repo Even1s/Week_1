@@ -1,14 +1,15 @@
 .header {
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 .header__block-1{
     background-color: #18154B;
     height: 46px;
 }
 .header__container {
-    max-width: 1192px;
-    padding: 0 6px;
+    max-width: 1200px;
+    padding: 0 10px;
     height: 100%;
     display: flex;
     margin: auto;
@@ -103,7 +104,6 @@
             padding-top: 2px;
             top: -6px;
             right: -7px;
-            z-index: 1;
         }
     }
 }

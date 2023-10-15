@@ -36,3 +36,36 @@
         background: linear-gradient(0deg, rgba(24, 21, 75, 0.15) 0%, rgba(24, 21, 75, 0.15) 100%), #FFF;
     }
 }
+.to-catalog-white {
+    background: none;
+    border: 0;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 117px;
+    font-size: 16px;
+    text-wrap: nowrap;
+}
+.to-catalog-black {
+    background: none;
+    border: 0;
+    color: #18154B;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 117px;
+    font-size: 16px;
+    text-wrap: nowrap;
+}
+@media (max-width: 580px) {
+    .white-button {
+        width: 180px;
+        height: 46px;
+    }
+    .to-catalog-white, .to-catalog-black {
+        width: 94px;
+        font-size: 14px;
+        gap: 8px;
+    }
+}

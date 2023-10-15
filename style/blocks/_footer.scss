@@ -12,14 +12,14 @@
     }
 }
 .footer__container {
-    max-width: 1192px;
+    max-width: 1200px;
     height: 100%;
     display: grid;
     margin: auto;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 50px 1fr;
     grid-gap: 6px 0;
-    padding: 60px 6px;
+    padding: 60px 10px;
 }
 .footer__list-title {
     color: #B8B8B8;
@@ -98,10 +98,5 @@
     }
     .footer__links-block, .footer__logo, .footer__list-title {
         margin: 40px 0 20px 0;
-    }
-    
-    .white-button {
-        width: 180px;
-        height: 46px;
     }
 }
