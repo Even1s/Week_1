@@ -40,7 +40,7 @@
 .header__block-2{
     background-color: #FFFFFF;
     height: 70px;
-    box-shadow: 0px 4px 20px 0px #00075E1A;
+    box-shadow: 0 4px 20px 0 #00075E1A;
 }
 .header__logo {
     font-weight: 800;
@@ -109,7 +109,7 @@
 }
 .mobile-header {
     background: #FFF;
-    box-shadow: 0px 4px 20px 0px rgba(0, 7, 94, 0.10);
+    box-shadow: 0 4px 20px 0 rgba(0, 7, 94, 0.10);
     height: 56px;
     width: 100%;
     display: none;
@@ -202,8 +202,7 @@
     background-color: #FFFFFF;
     display: none;
     flex-direction: column;
-    padding: 10px;
-    padding-bottom: 40px;
+    padding: 10px 10px 40px 10px;
     .mobile-header__navigation {
         display: flex;
         justify-content: space-between;
