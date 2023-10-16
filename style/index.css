@@ -10,7 +10,7 @@
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%), linear-gradient(74deg, #0D748B -10.13%, #1A0B73 75.49%);
 }
 .button-gradient:hover {
-  box-shadow: 0px 4px 20px 0px rgba(26, 11, 115, 0.4);
+  box-shadow: 0 4px 20px 0 rgba(26, 11, 115, 0.4);
   cursor: pointer;
 }
 .button-gradient:active {
@@ -31,7 +31,7 @@
   background: rgba(255, 255, 255, 0.6);
 }
 .white-button:hover {
-  box-shadow: 0px 4px 30px 0px rgba(255, 255, 255, 0.4);
+  box-shadow: 0 4px 30px 0 rgba(255, 255, 255, 0.4);
   cursor: pointer;
 }
 .white-button:active {
@@ -47,7 +47,7 @@
   gap: 10px;
   width: 117px;
   font-size: 16px;
-  text-wrap: nowrap;
+  text-wrap: none;
 }
 
 .to-catalog-black {
@@ -59,7 +59,7 @@
   gap: 10px;
   width: 117px;
   font-size: 16px;
-  text-wrap: nowrap;
+  text-wrap: none;
 }
 
 @media (max-width: 580px) {
