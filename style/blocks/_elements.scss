@@ -45,7 +45,7 @@
     gap: 10px;
     width: 117px;
     font-size: 16px;
-    text-wrap: none;
+    white-space: nowrap;
 }
 .to-catalog-black {
     background: none;
@@ -56,7 +56,7 @@
     gap: 10px;
     width: 117px;
     font-size: 16px;
-    text-wrap: none;
+    white-space: nowrap;
 }
 @media (max-width: 580px) {
     .white-button {

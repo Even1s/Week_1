@@ -13,9 +13,11 @@
     padding: 0 10px;
     margin: auto;
 }
+body {
+    background:#F0F5FB;
+}
 main {
     min-height: 100vh;
-    background:#F0F5FB;
 }
 .lock {
     overflow-y: hidden;
@@ -33,6 +35,7 @@ main {
     }
 }
 .banner__guarantee {
+    box-shadow: 0 4px 20px 0 #00075E1A;
     border-radius: 10px;
     background: url("/img/microciruit.svg") no-repeat, radial-gradient(298px 281px at calc(100% + 73px) center, #346EA433 0, #346EA433 100%, transparent), linear-gradient(73.56deg, #0D748B -10.13%, #1A0B73 75.49%);
     padding: 80px 0 0 60px;
@@ -70,7 +73,7 @@ main {
         border-radius: 50%;
         background-color: #38B0C166;
     }
-    .banner__select {
+    .banner__select, .hits__select {
         width: 12px;
         height: 12px;
         background-color: #38B0C1;
@@ -79,7 +82,8 @@ main {
 .banner__discount {
     border-radius: 10px;
     height: 440px;
-    background: 
+    box-shadow: 0 4px 20px 0 #00075E1A;
+    background:
     radial-gradient(85.056% 113.4% at 102.5% 106.32%, #42E8E0 0%, #40DDDA 9.21%, #3AAEC0 17.3%, #3484A9 25.73%, #2F6195 34.58%, #2B4486 44%, #282E79 54.25%, #261E71 65.94%, #24156C 82.26%, transparent),
     radial-gradient(85.056% 113.4% at -2.5% -6.32%, #42E8E0 0%, #40DDDA 9.21%, #3AAEC0 17.3%, #3484A9 25.73%, #2F6195 34.58%, #2B4486 44%, #282E79 54.25%, #261E71 65.94%, #24156C 82.26%, transparent),
     #1A0B73;
@@ -118,6 +122,7 @@ main {
     .banner {
         grid-template-columns: 1fr;
         gap: 10px;
+        margin-top: 30px;
     }
     .banner__sub-title {
         gap: 10px;
@@ -135,6 +140,9 @@ main {
     }
 }
 @media (max-width: 710px) {
+    .banner {
+        margin-top: 20px;
+    }
     .banner__sub-title {
         h1 {
             font-size: 38px;
@@ -245,8 +253,12 @@ main {
     left: 35px;
 }
 @media (max-width: 1180px) {
+    .categories {
+        margin-top: 60px;
+    }
     .categories__product-list {
         grid-template-columns: 1fr 1fr;
+        margin-top: 30px;
     }
 }
 @media (max-width: 800px) {
@@ -283,4 +295,229 @@ main {
     .categories__product .to-catalog-black {
         right: calc(100% - 235px);
     }
+}
+.advantages {
+    box-shadow: 0 4px 20px 0 #00075E1A;
+    background:
+    url("/img/advantages_bg.svg"),
+    radial-gradient(98.19% 130.91% at -8.58% -1.44%, #42E8E0 0%, #40DDDA 1.57%, #3AAEC0 9.21%, #3484A9 17.3%, #2F6195 25.73%, #2B4486 34.58%, #282E79 44%, #180564 72.26%, transparent 72.26%),
+    radial-gradient(98.19% 130.91% at 108.58% 107.44%, #42E8E0 0%, #40DDDA 1.57%, #3AAEC0 9.21%, #3484A9 17.3%, #2F6195 25.73%, #2B4486 34.58%, #282E79 44%, #180564 72.26%);
+    height: 374px;
+    margin-bottom: 10px;
+    margin-top: 80px;
+    border-radius: 10px;
+    position: relative;
+    padding: 50px 10px 0 60px;
+    h1 {
+        font-size: 36px;
+        font-weight: 800;
+        width: 340px;
+        text-transform: uppercase;
+        color: #FFF;
+    }
+}
+.advantages__img {
+    position: absolute;
+    bottom: 15px;
+    left: 55px;
+}
+.advantages__block {
+    width: calc(100% - 480px);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: absolute;
+    column-gap: 20px;
+    row-gap: 40px;
+    top: 50px;
+    right: 0;
+}
+.advantages__item {
+    img {
+        margin-bottom: 4px;
+        border-radius: 50%;
+        box-shadow: 0 4px 40px 0 #000654E6;
+    }
+    h3 {
+        font-size: 16px;
+        font-weight: 600;
+        color: #FFFFFF;
+    }
+}
+@media (max-width: 1080px) {
+    .advantages {
+        padding: 50px 10px 0 40px;
+    }
+    .advantages__img {
+        left: 35px;
+    }
+    .advantages__block {
+        width: calc(100% - 380px);
+    }
+}
+@media (max-width: 980px) {
+    .advantages {
+        background:
+                url("/img/advantages_bg_mobile.svg") no-repeat,
+                radial-gradient(98.19% 130.91% at -8.58% -1.44%, #42E8E0 0%, #40DDDA 1.57%, #3AAEC0 9.21%, #3484A9 17.3%, #2F6195 25.73%, #2B4486 34.58%, #282E79 44%, #180564 72.26%, transparent 72.26%),
+                radial-gradient(98.19% 130.91% at 108.58% 107.44%, #42E8E0 0%, #40DDDA 1.57%, #3AAEC0 9.21%, #3484A9 17.3%, #2F6195 25.73%, #2B4486 34.58%, #282E79 44%, #180564 72.26%);
+        padding: 30px;
+        h1 {
+            margin-bottom: 30px;
+        }
+        height: 678px;
+    }
+    .advantages__block {
+        position: unset;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 100%;
+    }
+    .advantages__img {
+        left: 50%;
+        transform: translate(-50%, 0);
+        height: 257px;
+    }
+}
+@media (max-width: 710px) {
+    .advantages {
+        height: 818px;
+        margin-top: 60px;
+    }
+    .advantages__block {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 480px) {
+    .advantages {
+        h1 {
+            font-size: 22px;
+            font-weight: 800;
+            width: auto;
+        }
+    }
+    .advantages__block {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .advantages__item {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        img {
+            margin: 0;
+        }
+    }
+}
+.hits {
+    position: relative;
+    height: 490px;
+    margin: 80px 0 10px 0;
+    h1 {
+        font-size: 36px;
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+    .pagination {
+        right: 50%;
+        bottom: 0;
+        transform: translate(50%, 0);
+    }
+}
+.hits__block {
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+}
+.hits__product {
+    box-shadow: 0 4px 20px 0 #00075E1A;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 30px 20px 30px 20px;
+    position: relative;
+    height: 360px;
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    .button-gradient {
+        margin: 0 auto;
+    }
+}
+.hits__product-name {
+    font-size: 14px;
+    font-weight: 600;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin: 10px 0 6px 0;
+}
+.hits__cart {
+    width: 40px;
+    height: 40px;
+    border: 0;
+    border-radius: 50%;
+    background-color: #F0F5FB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hits__product-img {
+    height: 160px;
+    margin: 0 auto;
+}
+.hits__presence {
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 14px;
+    position: relative;
+    &::before {
+        position: absolute;
+        content: '';
+        display: block;
+        height: 6px;
+        width: 6px;
+        border-radius: 50%;
+        background: #38B0C1;
+        left: -14px;
+        top: 5px;
+    }
+}
+.hits__price-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    h2 {
+        font-size: 14px;
+        font-weight: 700;
+        color: #303239;
+    }
+    del {
+        font-size: 10px;
+        color: #9B9B9B;
+        text-decoration: line-through;
+        margin-right: 13px;
+    }
+}
+.hits__label {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    height: 22px;
+    background-color: #F0F5FB;
+    border-radius: 4px;
+    span {
+        text-transform: uppercase;
+        padding: 0 10px;
+        font-size: 12px;
+        font-weight: 800;
+        background: linear-gradient(73.56deg, #0D748B -10.13%, #1A0B73 75.49%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+.hits__favourite {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 22px;
 }

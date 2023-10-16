@@ -232,7 +232,7 @@
         }
     }
 }
-.mobile-header__search-input {
+.mobile-header__search {
     position: relative;
     input {
         position: absolute;
@@ -245,6 +245,9 @@
         font-size: 14px;
         font-weight: 400;
         color: #303239;
+        &:focus-visible {
+            outline: #F3F3F3 solid 1px;
+        }
     }
     button {
         position: absolute;
