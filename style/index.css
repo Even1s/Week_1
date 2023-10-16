@@ -176,7 +176,7 @@
   top: 50%;
   transform: translate(-50%, -50%);
 }
-.header__menu button h4 {
+.header__menu button span {
   position: absolute;
   font-size: 10px;
   font-weight: 500;
@@ -253,7 +253,7 @@
   transform: translate(-50%, -50%);
   width: 18px;
 }
-.mobile-header__menu button h4 {
+.mobile-header__menu button span {
   position: absolute;
   font-size: 7.5px;
   font-weight: 500;
@@ -574,8 +574,7 @@ main {
 
 .banner__guarantee {
   border-radius: 10px;
-  background: url("/img/microciruit.svg"), radial-gradient(298px 281px at calc(100% + 73px) center, rgba(52, 110, 164, 0.2) 0, rgba(52, 110, 164, 0.2) 100%, transparent), linear-gradient(73.56deg, #0D748B -10.13%, #1A0B73 75.49%);
-  background-repeat: no-repeat;
+  background: url("/img/microciruit.svg") no-repeat, radial-gradient(298px 281px at calc(100% + 73px) center, rgba(52, 110, 164, 0.2) 0, rgba(52, 110, 164, 0.2) 100%, transparent), linear-gradient(73.56deg, #0D748B -10.13%, #1A0B73 75.49%);
   padding: 80px 0 0 60px;
   position: relative;
   height: 440px;
@@ -620,10 +619,9 @@ main {
 }
 
 .banner__discount {
-  background-color: #1A0B73;
   border-radius: 10px;
   height: 440px;
-  background: radial-gradient(85.056% 113.4% at 102.5% 106.32%, #42E8E0 0%, #40DDDA 9.21%, #3AAEC0 17.3%, #3484A9 25.73%, #2F6195 34.58%, #2B4486 44%, #282E79 54.25%, #261E71 65.94%, #24156C 82.26%, transparent), radial-gradient(85.056% 113.4% at -2.5% -6.32%, #42E8E0 0%, #40DDDA 9.21%, #3AAEC0 17.3%, #3484A9 25.73%, #2F6195 34.58%, #2B4486 44%, #282E79 54.25%, #261E71 65.94%, #24156C 82.26%, transparent), #24126A;
+  background: radial-gradient(85.056% 113.4% at 102.5% 106.32%, #42E8E0 0%, #40DDDA 9.21%, #3AAEC0 17.3%, #3484A9 25.73%, #2F6195 34.58%, #2B4486 44%, #282E79 54.25%, #261E71 65.94%, #24156C 82.26%, transparent), radial-gradient(85.056% 113.4% at -2.5% -6.32%, #42E8E0 0%, #40DDDA 9.21%, #3AAEC0 17.3%, #3484A9 25.73%, #2F6195 34.58%, #2B4486 44%, #282E79 54.25%, #261E71 65.94%, #24156C 82.26%, transparent), #1A0B73;
   padding: 40px 0 0 40px;
   position: relative;
   color: #FFFFFF;
@@ -722,8 +720,7 @@ main {
     width: 136px;
   }
   .banner__guarantee {
-    background: url("/img/microciruit1.svg") top -14px left 0/353px 368px, radial-gradient(166px 166px at calc(100% + 90px) calc(100% - 128px), rgba(52, 110, 164, 0.2) 0, rgba(52, 110, 164, 0.2) 100%, transparent), linear-gradient(73.56deg, #0D748B -10.13%, #1A0B73 75.49%);
-    background-repeat: no-repeat;
+    background: url("/img/microciruit1.svg") no-repeat top -14px left 0/353px 368px, radial-gradient(166px 166px at calc(100% + 90px) calc(100% - 128px), rgba(52, 110, 164, 0.2) 0, rgba(52, 110, 164, 0.2) 100%, transparent), linear-gradient(73.56deg, #0D748B -10.13%, #1A0B73 75.49%);
   }
   .banner__guarantee h1 {
     font-size: 22px;
@@ -751,7 +748,7 @@ main {
   text-transform: uppercase;
 }
 
-.categories__broduct-list {
+.categories__product-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
@@ -762,7 +759,7 @@ main {
 .categories__product {
   height: 170px;
   border-radius: 10px;
-  box-shadow: 0px 4px 20px 0px rgba(0, 7, 94, 0.1019607843);
+  box-shadow: 0 4px 20px 0 rgba(0, 7, 94, 0.1019607843);
   display: flex;
   position: relative;
   flex-direction: column;
@@ -789,12 +786,12 @@ main {
 }
 
 @media (max-width: 1180px) {
-  .categories__broduct-list {
+  .categories__product-list {
     grid-template-columns: 1fr 1fr;
   }
 }
 @media (max-width: 800px) {
-  .categories__broduct-list {
+  .categories__product-list {
     grid-template-columns: 1fr;
   }
 }
@@ -817,7 +814,7 @@ main {
   .categories h1 {
     font-size: 22px;
   }
-  .categories__broduct-list {
+  .categories__product-list {
     margin-top: 30px;
   }
 }
@@ -825,4 +822,6 @@ main {
   .categories__product .to-catalog-black {
     right: calc(100% - 235px);
   }
-}/*# sourceMappingURL=index.css.map */
+}
+
+/*# sourceMappingURL=index.css.map */
