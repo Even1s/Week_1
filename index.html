@@ -15,12 +15,12 @@
             <div class="header__container">
                 <div class="header__contacts">
                     <a href="mailto:mein@miner.com">
-                        <img src="./img/email.svg" alt="email:">
-                        <h3>mein@miner.com</h3>
+                        <img class="header__contact-img" src="./img/email.svg" alt="email">
+                        <h3 class="header__contact-text">mein@miner.com</h3>
                     </a>
                     <a href="tel:+79999999999">
-                        <img src="./img/phone.svg" alt="phone:">
-                        <h3>+7 (999) 999-99-99</h3>
+                        <img class="header__contact-img" src="./img/phone.svg" alt="phone">
+                        <h3 class="header__contact-text">+7 (999) 999-99-99</h3>
                     </a>
                 </div>
                 <div class="header__media">
@@ -35,25 +35,27 @@
         </div>
         <div class="header__block-white">
             <div class="header__container">
-                <h1>MEIN MINER</h1>
+                <h3 class="header__title">MEIN MINER</h3>
                 <div class="header__navigation">
-                    <div class="header__catalog">
-                        <h3>Каталог товаров</h3>
-                        <img src="./img/triangle.svg" alt="▽">
+                    <div class="header__catalog-block">
+                        <h3 class="header__navigate-link header__catalog-btn">Каталог товаров</h3>
+                        <img class="header__catalog-triangle" src="./img/triangle.svg" alt="▽">
                     </div>
-                    <a href="#">Цены</a>
-                    <a href="#">Калькулятор</a>
-                    <a href="#">Доставка</a>
-                    <a href="#">Отзывы</a>
+                    <a class="header__navigate-link" href="#">Цены</a>
+                    <a class="header__navigate-link" href="#">Калькулятор</a>
+                    <a class="header__navigate-link" href="#">Доставка</a>
+                    <a class="header__navigate-link" href="#">Отзывы</a>
                 </div>
                 <button class="button-gradient">Заказать звонок</button>
                 <div class="header__menu">
-                    <button><img src="./img/search.svg" alt="search"></button>
-                    <button>
+                    <button class="header__menu-btn">
+                        <img src="./img/search.svg" alt="search">
+                    </button>
+                    <button class="header__menu-btn">
                         <img src="./img/heart.svg" alt="favourite">
                         <span>6</span>
                     </button>
-                    <button>
+                    <button class="header__menu-btn">
                         <img src="./img/cart.svg" alt="cart">
                         <span>3</span>
                     </button>
@@ -62,51 +64,53 @@
         </div>
         <div class="mobile-header">
             <div class="mobile-header__container">
-                <h1>MEIN MINER</h1>
+                <h3 class="mobile-header__title">MEIN MINER</h3>
                 <div class="mobile-header__top-navigation">
-                    <a href="#">Цены</a>
-                    <a href="#">Калькулятор</a>
-                    <a href="#">Доставка</a>
-                    <a href="#">Отзывы</a>
+                    <a class="mobile-header__navigate-link" href="#">Цены</a>
+                    <a class="mobile-header__navigate-link" href="#">Калькулятор</a>
+                    <a class="mobile-header__navigate-link" href="#">Доставка</a>
+                    <a class="mobile-header__navigate-link" href="#">Отзывы</a>
                 </div>
                 <div class="mobile-header__menu">
-                    <button>
+                    <button class="mobile-header__menu-btn">
                         <img src="./img/heart.svg" alt="favourite">
                         <span>6</span>
                     </button>
-                    <button>
+                    <button class="mobile-header__menu-btn">
                         <img src="./img/cart.svg" alt="cart">
                         <span>3</span>
                     </button>
-                    <button id="menu-hamburger"><img src="./img/menu-hamburger.svg" alt="menu"></button>
+                    <button class="mobile-header__menu-btn" id="menu-hamburger">
+                        <img src="./img/menu-hamburger.svg" alt="menu">
+                    </button>
                 </div>
             </div>
             <div class="mobile-header__full-menu">
-                <div class="mobile-header__search">
-                    <!--suppress HtmlFormInputWithoutLabel -->
-                    <input placeholder="Поиск" type="text" name="search" id="search">
-                    <button>
+                <div class="mobile-header__search-block">
+                    <input class="mobile-header__search-input" placeholder="Поиск" type="text" name="search" id="search">
+                    <button class="mobile-header__search-btn">
                         <img src="./img/search.svg" alt="search">
                     </button>
+                    <label for="search"></label>
                 </div>
                 <div class="mobile-header__navigation">
-                    <div class="mobile-header__catalog">
-                        <h3>Каталог товаров</h3>
-                        <img src="./img/triangle1.svg" alt="▽">
+                    <div class="mobile-header__catalog-block">
+                        <h3 class="mobile-header__navigate-link">Каталог товаров</h3>
+                        <img class="mobile-header__catalog-triangle" src="./img/triangle1.svg" alt="▽">
                     </div>
-                    <a href="#">Цены</a>
-                    <a href="#">Калькулятор</a>
-                    <a href="#">Доставка</a>
-                    <a href="#">Отзывы</a>
+                    <a class="mobile-header__navigate-link" href="#">Цены</a>
+                    <a class="mobile-header__navigate-link" href="#">Калькулятор</a>
+                    <a class="mobile-header__navigate-link" href="#">Доставка</a>
+                    <a class="mobile-header__navigate-link" href="#">Отзывы</a>
                 </div>
                 <div class="mobile-header__contacts">
-                    <a href="mailto:mein@miner.com">
+                    <a class="mobile-header__contact" href="mailto:mein@miner.com">
                         <img src="./img/email1.svg" alt="email:">
-                        <h3>mein@miner.com</h3>
+                        <h3 class="mobile-header__contact-text">mein@miner.com</h3>
                     </a>
-                    <a href="tel:+79999999999">
+                    <a class="mobile-header__contact" href="tel:+79999999999">
                         <img src="./img/phone1.svg" alt="phone:">
-                        <h3>+7 (999) 999-99-99</h3>
+                        <h3 class="mobile-header__contact-text">+7 (999) 999-99-99</h3>
                     </a>
                 </div>
                 <div class="mobile-header__call">
@@ -127,9 +131,9 @@
         <div class="main__container">
             <div class="banner">
                 <div class="banner__guarantee">
-                    <img src="./img/AntminerL7_banner.png" alt="miner-image">
-                    <h2>оборудование для майнинга оптом</h2>
-                    <h3>с гарантией 12 месяцев</h3>
+                    <img class="banner__miner-img" src="./img/AntminerL7_banner.png" alt="miner-image">
+                    <h1 class="banner__title">оборудование для майнинга оптом</h1>
+                    <h3 class="banner__sub-title">с гарантией 12 месяцев</h3>
                     <button class="white-button">Перейти в каталог</button>
                     <div class="pagination">
                         <span class="banner__select"></span>
@@ -141,9 +145,9 @@
                 <div class="banner__discount">
                     <img src="./img/bitcoin.svg" alt="bitcoin" class="banner__bitcoin">
                     <h2 class="banner__discount-title">выгодное предложение</h2>
-                    <div class="banner__sub-title">
-                        <h2>-20%</h2>
-                        <h3>на все товары Antminer</h3>
+                    <div class="banner__sub-title-block">
+                        <h2 class="banner__sub-title-percent">-20%</h2>
+                        <h3 class="banner__sub-title">на все товары Antminer</h3>
                     </div>
                     <button class="to-catalog-white">
                         В каталог
@@ -156,7 +160,7 @@
                 <div class="categories__product-list">
                     <div class="categories__product">
                         <img class="categories__product-img" src="./img/Asic_miners.png" alt="miners">
-                        <h3>Asic miners оптом</h3>
+                        <h3 class="categories__product-name">Asic miners оптом</h3>
                         <button class="to-catalog-black">
                             В каталог
                             <img src="./img/Arrow-black.svg" alt="Arrow-black">
@@ -164,7 +168,7 @@
                     </div>
                     <div class="categories__product">
                         <img class="categories__product-img" src="./img/gpu_farms.png" alt="gpu_farms">
-                        <h3>GPU фермы оптом</h3>
+                        <h3 class="categories__product-name">GPU фермы оптом</h3>
                         <button class="to-catalog-black">
                             В каталог
                             <img src="./img/Arrow-black.svg" alt="Arrow-black">
@@ -172,7 +176,7 @@
                     </div>
                     <div class="categories__product">
                         <img class="categories__product-img" src="./img/gpu.png" alt="gpu">
-                        <h3>Видеокарты оптом</h3>
+                        <h3 class="categories__product-name">Видеокарты оптом</h3>
                         <button class="to-catalog-black">
                             В каталог
                             <img src="./img/Arrow-black.svg" alt="Arrow-black">
@@ -180,7 +184,7 @@
                     </div>
                     <div class="categories__product">
                         <img class="categories__product-img" src="./img/flash_cart.png" alt="flash_cart">
-                        <h3>Аксессуары оптом</h3>
+                        <h3 class="categories__product-name">Аксессуары оптом</h3>
                         <button class="to-catalog-black">
                             В каталог
                             <img src="./img/Arrow-black.svg" alt="Arrow-black">
@@ -188,7 +192,7 @@
                     </div>
                     <div class="categories__product">
                         <img class="categories__product-img" src="./img/PC.png" alt="PC">
-                        <h3>Компьютерные комплектующие оптом</h3>
+                        <h3 class="categories__product-name">Компьютерные комплектующие оптом</h3>
                         <button class="to-catalog-black">
                             В каталог
                             <img src="./img/Arrow-black.svg" alt="Arrow-black">
@@ -196,7 +200,7 @@
                     </div>
                     <div class="categories__product">
                         <img class="categories__product-img" src="./img/mining_components.png" alt="mining_components">
-                        <h3>Комплектующие для майнинга оптом</h3>
+                        <h3 class="categories__product-name">Комплектующие для майнинга оптом</h3>
                         <button class="to-catalog-black">
                             В каталог
                             <img src="./img/Arrow-black.svg" alt="Arrow-black">
@@ -209,46 +213,48 @@
                 <h2 class="advantages__title">наши преимущества</h2>
                 <div class="advantages__block"> <!-- с англ "преимущества", не очень почему не по бему -->
                     <div class="advantages__item">
-                        <img src="./img/check.svg" alt="check">
-                        <h3>Более 5 лет успешной работы</h3>
+                        <img class="advantages__item-img" src="./img/check.svg" alt="check">
+                        <h3 class="advantages__item-text">Более 5 лет успешной работы</h3>
                     </div>
                     <div class="advantages__item">
-                        <img src="./img/check.svg" alt="check">
-                        <h3>Сотни положительных отзывов</h3>
+                        <img class="advantages__item-img" src="./img/check.svg" alt="check">
+                        <h3 class="advantages__item-text">Сотни положительных отзывов</h3>
                     </div>
                     <div class="advantages__item">
-                        <img src="./img/check.svg" alt="check">
-                        <h3>Работаем по&nbsp;всей России</h3>
+                        <img class="advantages__item-img" src="./img/check.svg" alt="check">
+                        <h3 class="advantages__item-text">Работаем по&nbsp;всей России</h3>
                     </div>
                     <div class="advantages__item">
-                        <img src="./img/check.svg" alt="check">
-                        <h3>Сотрудничество с&nbsp;производителем</h3>
+                        <img class="advantages__item-img" src="./img/check.svg" alt="check">
+                        <h3 class="advantages__item-text">Сотрудничество с&nbsp;производителем</h3>
                     </div>
                     <div class="advantages__item">
-                        <img src="./img/check.svg" alt="check">
-                        <h3>Гарантия на&nbsp;оборудование</h3>
+                        <img class="advantages__item-img" src="./img/check.svg" alt="check">
+                        <h3 class="advantages__item-text">Гарантия на&nbsp;оборудование</h3>
                     </div>
                     <div class="advantages__item">
-                        <img src="./img/check.svg" alt="check">
-                        <h3>Собственный склад в Москве</h3>
+                        <img class="advantages__item-img" src="./img/check.svg" alt="check">
+                        <h3 class="advantages__item-text">Собственный склад в Москве</h3>
                     </div>
                 </div>
             </div>
             <div class="hits">
-                <h2>хиты продаж</h2>
+                <h2 class="hits__title">хиты продаж</h2>
                 <div class="hits__block">
                     <div class="hits__product">
                         <img src="./img/AntminerL7.png" alt="miner-image" class="hits__product-img">
                         <h3 class="hits__product-name">Antminer L7 8800 Mh/s</h3>
                         <p class="hits__presence">В наличии</p>
                         <div class="hits__price-block">
-                            <h3>615 000 ₽</h3>
+                            <h3 class="hits__price-text">615 000 ₽</h3>
                             <button class="hits__cart">
                                 <img src="./img/cart.svg" alt="cart">
                             </button>
                         </div>
                         <button class="button-gradient">Купить в 1 клик</button> <!-- переиспользуемая кнопка, так же и с: white-button, to-catalog-white/black -->
-                        <div class="hits__label"><p>хит</p></div>
+                        <div class="hits__label-block">
+                            <p class="hits__label-text">хит</p>
+                        </div>
                         <img src="./img/heart.svg" alt="favourite" class="hits__favourite">
                     </div>
                     <div class="hits__product">
@@ -256,16 +262,18 @@
                         <h3 class="hits__product-name">Antminer S19j pro 110 Th/s</h3>
                         <p class="hits__presence">Под заказ</p>
                         <div class="hits__price-block">
-                            <div class="hits__price-discount">
-                                <h3>245 000 ₽</h3>
-                                <p>315 000 ₽</p>
+                            <div class="hits__discount-block">
+                                <h3 class="hits__price-text">245 000 ₽</h3>
+                                <p class="hits__discount">315 000 ₽</p>
                             </div>
                             <button class="hits__cart">
                                 <img src="./img/cart.svg" alt="cart">
                             </button>
                         </div>
                         <button class="button-gradient">Купить в 1 клик</button>
-                        <div class="hits__label"><p>sale</p></div>
+                        <div class="hits__label-block">
+                            <p class="hits__label-text">sale</p>
+                        </div>
                         <img src="./img/heart.svg" alt="favourite" class="hits__favourite">
                     </div>
                     <div class="hits__product">
@@ -273,13 +281,15 @@
                         <h3 class="hits__product-name">Whatsminer M3x 12.5 Th/s</h3>
                         <p class="hits__presence">В наличии</p>
                         <div class="hits__price-block">
-                            <h3>14 000 ₽</h3>
+                            <h3 class="hits__price-text">14 000 ₽</h3>
                             <button class="hits__cart">
                                 <img src="./img/cart.svg" alt="cart">
                             </button>
                         </div>
                         <button class="button-gradient">Купить в 1 клик</button>
-                        <div class="hits__label"><p>new</p></div>
+                        <div class="hits__label-block">
+                            <p class="hits__label-text">new</p>
+                        </div>
                         <img src="./img/heart.svg" alt="favourite" class="hits__favourite">
                     </div>
                     <div class="hits__product">
@@ -287,16 +297,18 @@
                         <h3 class="hits__product-name">Antminer Z15e 200 ksol</h3>
                         <p class="hits__presence">В наличии</p>
                         <div class="hits__price-block">
-                            <div class="hits__price-discount">
-                                <h3>290 000 ₽</h3>
-                                <p>325 000 ₽</p>
+                            <div class="hits__discount-block">
+                                <h3 class="hits__price-text">290 000 ₽</h3>
+                                <p class="hits__discount">325 000 ₽</p>
                             </div>
                             <button class="hits__cart">
                                 <img src="./img/cart.svg" alt="cart">
                             </button>
                         </div>
                         <button class="button-gradient">Купить в 1 клик</button>
-                        <div class="hits__label"><p>sale</p></div>
+                        <div class="hits__label-block">
+                            <p class="hits__label-text">sale</p>
+                        </div>
                         <img src="./img/heart.svg" alt="favourite" class="hits__favourite">
                     </div>
                     <div class="hits__product">
@@ -304,13 +316,15 @@
                         <h3 class="hits__product-name">Innosilicon A11 1500 Mh/s</h3>
                         <p class="hits__presence">Под заказ</p>
                         <div class="hits__price-block">
-                            <h3>173 000 ₽</h3>
+                            <h3 class="hits__price-text">173 000 ₽</h3>
                             <button class="hits__cart">
                                 <img src="./img/cart.svg" alt="cart">
                             </button>
                         </div>
                         <button class="button-gradient">Купить в 1 клик</button>
-                        <div class="hits__label"><p>хит</p></div>
+                        <div class="hits__label-block">
+                            <p class="hits__label-text">хит</p>
+                        </div>
                         <img src="./img/heart.svg" alt="favourite" class="hits__favourite">
                     </div>
                     <div class="hits__product">
@@ -318,13 +332,15 @@
                         <h3 class="hits__product-name">Whatsminer M3x 12.5 Th/s</h3>
                         <p class="hits__presence">В наличии</p>
                         <div class="hits__price-block">
-                            <h3>14 000 ₽</h3>
+                            <h3 class="hits__price-text">14 000 ₽</h3>
                             <button class="hits__cart">
                                 <img src="./img/cart.svg" alt="cart">
                             </button>
                         </div>
                         <button class="button-gradient">Купить в 1 клик</button>
-                        <div class="hits__label"><p>new</p></div>
+                        <div class="hits__label-block">
+                            <p class="hits__label-text">new</p>
+                        </div>
                         <img src="./img/heart.svg" alt="favourite" class="hits__favourite">
                     </div>
                 </div>
@@ -338,7 +354,7 @@
             </div>
             <div class="about">
                 <div class="about__text">
-                    <h2>о КОМПАНИИ</h2>
+                    <h2 class="about__title">о КОМПАНИИ</h2>
                     <p>С&nbsp;2017&nbsp;года Main-miner поставляет технику для&nbsp;майнинга на&nbsp;российский рынок оптом. За&nbsp;пять лет&nbsp;мы смогли укрепить свои позиции на&nbsp;рынке оборудования, вырастили персонал, прекрасно разбирающийся в&nbsp;каждом типе асиков и&nbsp;комплектующих.</p>
                     <p class="about__opt-text">Если&nbsp;вы&nbsp;хотите купить асики оптом, то&nbsp;с&nbsp;нами можете быть уверены как&nbsp;в&nbsp;качестве техники, так&nbsp;и&nbsp;в&nbsp;надёжности сотрудничества. Лучше всего о&nbsp;нас&nbsp;говорит репутация!</p>
                 </div>
@@ -348,37 +364,37 @@
                 <div class="about__points-block">
                     <div class="about__point">
                         <img src="./img/point1.png" alt="point-img">
-                        <p>Работаем без выходных – 7 дней в неделю</p>
+                        <p class="about__point-text">Работаем без выходных – 7 дней в неделю</p>
                     </div>
                     <div class="about__point">
                         <img src="./img/point2.png" alt="point-img">
-                        <p>Прямое сотрудничество с поставщиками</p>
+                        <p class="about__point-text">Прямое сотрудничество с поставщиками</p>
                     </div>
                     <div class="about__point">
                         <img src="./img/point3.png" alt="point-img">
-                        <p>Быстрая авиадоставка от&nbsp;дней</p>
+                        <p class="about__point-text">Быстрая авиадоставка от&nbsp;дней</p>
                     </div>
                     <div class="about__point">
                         <img src="./img/point4.png" alt="point-img">
-                        <p>Предоплата за&nbsp;предзаказ от&nbsp;30%</p>
+                        <p class="about__point-text">Предоплата за&nbsp;предзаказ от&nbsp;30%</p>
                     </div>
                     <div class="about__point">
                         <img src="./img/point5.png" alt="point-img">
-                        <p>Официальный договор, полная защита средств</p>
+                        <p class="about__point-text">Официальный договор, полная защита средств</p>
                     </div>
                     <div class="about__point">
                         <img src="./img/point6.png" alt="point-img">
-                        <p>Видеопроверка для удаленных клиентов</p>
+                        <p class="about__point-text">Видеопроверка для удаленных клиентов</p>
                     </div>
                 </div>
             </div>
             <div class="help">
-                <h2>не нашли то, что&nbsp;искали?</h2>
-                <h2>свяжитесь с нами, мы вам поможем!</h2>
-                <h3>Заполните форму и мы свяжемся с Вами в ближайшее время</h3>
+                <h2 class="help__title">не нашли то, что&nbsp;искали?</h2>
+                <h2 class="help__title">свяжитесь с нами, мы вам поможем!</h2>
+                <h3 class="help__sub-title">Заполните форму и мы свяжемся с Вами в ближайшее время</h3>
                 <form class="help__blank">
-                    <input class="user__contacts" type="text" placeholder="Ваше имя" name="name" id="name">
-                    <input class="user__contacts" type="tel" placeholder="Ваш телефон" name="phone" id="phone">
+                    <input class="user-contacts" type="text" placeholder="Ваше имя" name="name" id="name">
+                    <input class="user-contacts" type="tel" placeholder="Ваш телефон" name="phone" id="phone">
                     <button class="white-button">Отправить</button>
                     <div class="checkbox-block">
                         <input type="checkbox" name="personal-data" id="personal-data">
@@ -393,23 +409,23 @@
                     <h2>контакты</h2>
                     <div class="contacts__point">
                         <img src="./img/geo.svg" alt="location">
-                        <h3>г. Москва, ул. Покровка, 47А</h3>
+                        <h3 class="contacts__point-title">г. Москва, ул. Покровка, 47А</h3>
                     </div>
                     <div class="contacts__point">
                         <img src="./img/metro.svg" alt="metro">
-                        <h3>м. Курская</h3>
+                        <h3 class="contacts__point-title">м. Курская</h3>
                     </div>
                     <a href="mailto:mein@miner.com" class="contacts__point">
                         <img src="./img/email-small.svg" alt="email">
-                        <h3>mein@miner.com</h3>
+                        <h3 class="contacts__point-title">mein@miner.com</h3>
                     </a>
                     <a href="tel:+79999999999" class="contacts__point">
                         <img src="./img/phone-small.svg" alt="phone">
-                        <h3>+7 (999) 999-99-99</h3>
+                        <h3 class="contacts__point-title">+7 (999) 999-99-99</h3>
                     </a>
                     <div class="contacts__point">
                         <img src="./img/time.svg" alt="time">
-                        <h3>График работы: ежедневно&nbsp;с&nbsp;9:00&nbsp;до&nbsp;20:00</h3>
+                        <h3 class="contacts__point-title">График работы: ежедневно&nbsp;с&nbsp;9:00&nbsp;до&nbsp;20:00</h3>
                     </div>
                     <div class="contacts__social">
                         <img src="./img/telegram40.png" alt="telegram">
@@ -429,26 +445,26 @@
             <h2 class="footer__list-title">Покупателям</h2>
             <h2 class="footer__list-title">каталог товаров</h2>
             <button class="white-button">Заказать звонок</button>
-            <h3>© Mein Miner, 2022</h3>
+            <h3 class="footer__sub-logo">© Mein Miner, 2022</h3>
             <div class="footer__list-block">
-                <a href="#">О компании</a>
-                <a href="#">Цены</a>
-                <a href="#">Калькулятор</a>
-                <a href="#">Доставка</a>
-                <a href="#">Отзывы</a>
-                <a href="#">Контакты</a>
+                <a class="footer__list-text" href="#">О компании</a>
+                <a class="footer__list-text" href="#">Цены</a>
+                <a class="footer__list-text" href="#">Калькулятор</a>
+                <a class="footer__list-text" href="#">Доставка</a>
+                <a class="footer__list-text" href="#">Отзывы</a>
+                <a class="footer__list-text" href="#">Контакты</a>
             </div>
             <div class="footer__list-block">
-                <a href="#">Asic miners</a>
-                <a href="#">GPU фермы</a>
-                <a href="#">Видеокарты</a>
-                <a href="#">Аксессуары</a>
-                <a href="#">Компьютерные комплектующие</a>
-                <a href="#">Комплектующие для майнинга</a>
+                <a class="footer__list-text" href="#">Asic miners</a>
+                <a class="footer__list-text" href="#">GPU фермы</a>
+                <a class="footer__list-text" href="#">Видеокарты</a>
+                <a class="footer__list-text" href="#">Аксессуары</a>
+                <a class="footer__list-text" href="#">Компьютерные комплектующие</a>
+                <a class="footer__list-text" href="#">Комплектующие для майнинга</a>
             </div>
             <div class="footer__links-block">
-                <a href="#">Публичная оферта</a>
-                <a href="#">Политика конфиденциальности</a>
+                <a class="footer__links-text" href="#">Публичная оферта</a>
+                <a class="footer__links-text" href="#">Политика конфиденциальности</a>
             </div>
         </div>
     </footer>

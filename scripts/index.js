@@ -10,3 +10,25 @@ burger.onclick = () =>{
         burgerImg.setAttribute('src', '/img/menu-hamburger.svg')
     }
 };
+const favourite = document.querySelectorAll("img.hits__favourite");
+const cart = document.querySelectorAll("button.hits__cart");
+favourite.forEach((imgFavourite) => {
+    imgFavourite.onclick = () => {
+        if(imgFavourite.getAttribute('src')==="./img/heart.svg") {
+            imgFavourite.setAttribute('src', './img/heart-On.png');
+        } else {
+            imgFavourite.setAttribute('src', './img/heart.svg');
+        }
+    }
+})
+cart.forEach((btn) => {
+    const imgCart = btn.querySelector("img");
+    btn.onclick = () => {
+        btn.classList.toggle('hits__cart_on');
+        if (imgCart.getAttribute('src')==="./img/cart.svg") {
+            imgCart.setAttribute('src',"./img/cart-On.svg");
+        } else {
+            imgCart.setAttribute('src',"./img/cart.svg");
+        }
+    }
+})
